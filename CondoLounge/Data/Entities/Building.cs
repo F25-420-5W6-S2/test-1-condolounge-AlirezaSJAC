@@ -2,6 +2,6 @@
 {
     public class Building
     {
-        List<Condo> Condos {  get; set; }
+        public List<Condo> Condos {  get; set; }
     }
 }

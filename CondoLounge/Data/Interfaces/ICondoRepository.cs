@@ -4,6 +4,6 @@ namespace CondoLounge.Data.Interfaces
 {
     public interface ICondoRepository : ICondoLoungeGenericRepository<Condo>
     {
-        public List<Condo> GetCondosForBuilding(Building building);
+        public List<Condo> GetCondosForABuilding(Building building);
     }
 }
