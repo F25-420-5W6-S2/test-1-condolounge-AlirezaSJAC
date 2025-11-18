@@ -4,7 +4,9 @@
     {
         public List<ApplicationUser> ApplicationUsers {  get; set; }
 
-        public string Address { get; set; }
+        public int Id { get; set; }
+
+        //public string Address { get; set; }
 
         public int CondoNumber { get; set; }
 

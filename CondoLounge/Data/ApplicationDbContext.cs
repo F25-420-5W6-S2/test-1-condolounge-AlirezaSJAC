@@ -7,6 +7,10 @@ namespace CondoLounge.Data
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser, IdentityRole<int>, int>
     {        
+        public DbSet<Building> Buildings { get; set; }
+        public DbSet<Condo> Condos { get; set; }
+        public DbSet<ApplicationUser> Users {  get; set; }
+
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
@@ -15,6 +19,7 @@ namespace CondoLounge.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+
         }
     }
 }

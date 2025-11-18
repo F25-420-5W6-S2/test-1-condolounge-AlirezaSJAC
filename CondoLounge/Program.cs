@@ -21,6 +21,8 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole<int>>(options => opti
 
 builder.Services.AddControllersWithViews();
 
+builder.Services.AddTransient<CondoLoungeSeeder>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
